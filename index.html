@@ -3,9 +3,199 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Барбершоп</title>
+    <title>Барбершоп Бородинский</title>
 </head>
 <body>
-    Барбершоп
+    <header class="page-header">
+        <nav class="navigation">
+            <ul class="navigation-list">
+                <li class="navigation-item">
+                    <a class="navigation-link" href="#">О нас</a>
+                </li>
+                <li class="navigation-item">
+                    <a class="navigation-link" href="#">Каталог</a>
+                </li>
+                <li class="navigation-item">
+                    <a class="navigation-link" href="#">Частые вопросы</a>
+                </li>
+            </ul>
+            <ul class="navigation-list navigation-user">
+                <li class="navigation-item">
+                    <a class="navigation-link" href="#">
+                        <span class="visually-hidden">Поиск</span>
+                    </a>
+                </li>
+                <li class="navigation-item">
+                    <a class="navigation-link" href="#">
+                        <span class="visually-hidden">Корзина</span>
+                    </a>
+                </li>
+                <li class="navigation-item">
+                    <a class="navigation-link" href="#">Вход</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main-index">
+        <h1 class="visually-hidden">Барбершоп Бородинский</h1>
+        <img class="logo" src="" alt="Логотип">
+        <section class="advantages">
+            <h2 class="visually-hidden">Преимущества</h2>
+            <ul class="advantages-list">
+                <li class="advantages-item">
+                    <h3 class="advantages-title">Быстро</h3>
+                    <p class="advantages-description">
+                        Мы делаем свою работу быстро! Два часа пролетят незаметно, 
+                        и вы — счастливый обладатель стильной стрижки-минутки!
+                    </p>
+                </li>
+                <li class="advantages-item">
+                    <h3 class="advantages-title">Круто</h3>
+                    <p class="advantages-description">
+                        Забудьте, как вы стриглись раньше.
+                        Мы сделаем из вас звезду футбола или кино! Во всяком случае внешне.
+                    </p>
+                </li>
+                <li class="advantages-item">
+                    <h3 class="advantages-title">Дорого</h3>
+                    <p class="advantages-description">
+                        Наши мастера — профессионалы своего дела и не могут стоить дешево. 
+                        К тому же, разве цена не даёт определённый статус?
+                    </p>
+                </li>
+            </ul>
+        </section>
+        <section class="services">
+            <h2 class="services-title">Популярные услуги</h2>
+            <ul class="services-list">
+                <li class="services-item">
+                    <span class="services-name">Стрижка машинкой</span>
+                    <b class="services-price">800  ₽</b>
+                </li>
+                <li class="services-item">
+                    <span class="services-name">Стрижка усов</span>
+                    <b class="services-price">1200  ₽</b>
+                </li>
+                <li class="services-item">
+                    <span class="services-name">Груминг</span>
+                    <b class="services-price">400  ₽</b>
+                </li>
+                <li class="services-item">
+                    <span class="services-name">Комплексная стрижка</span>
+                    <b class="services-price">2300  ₽</b>
+                </li>
+            </ul>
+            <a class="button-link" href="#">Посмотреть все</a>
+        </section>
+        <section class="gallery">
+            <h2 class="gallery-title">Фотогалерея</h2>
+            <img class="slider-image" src="" alt="Примеры работ">
+            <button class="slider-button slider-prev" type="button">
+                <span class="visually-hidden">Предыдущее фото</span>
+            </button>
+            <button class="slider-button slider-next" type="button">
+                <span class="visually-hidden">Следующее фото</span>
+            </button>
+            <ol class="slider-pagination">
+                <li class="slider-pagination-item">
+                    <button class="slider-pagination-button current">
+                        <span class="visually-hidden">Фото 1</span>
+                    </button>
+                </li>
+                <li class="slider-pagination-item">
+                    <button class="slider-pagination-button">
+                        <span class="visually-hidden">Фото 2</span>
+                    </button>
+                </li>
+                <li class="slider-pagination-item">
+                    <button class="slider-pagination-button">
+                        <span class="visually-hidden">Фото 3</span>
+                    </button>
+                </li>
+                <li class="slider-pagination-item">
+                    <button class="slider-pagination-button">
+                        <span class="visually-hidden">Фото 4</span>
+                    </button>
+                </li>
+            </ol>
+        </section>
+        <section class="contacts">
+                <h2 class="contacts-title">Контакты</h2>
+                <h3 class="contacts-subtitle">Барбершоп «Бородинский»</h3>
+                <address>
+                    <p class="contacts-city">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
+                    <a class="contacts-tel" href="tel:78005558628">+7 800 555-86-28</a>
+                </address>
+                <h3 class="contacts-subtitle">Время работы</h3>
+                <ul class="contacts-clock">
+                    <li class="contacts-clock-item">пн—пт: с 10:00 до 22:00</li>
+                    <li class="contacts-clock-item">сб—вс: с 10:00 до 19:00</li>
+                </ul>
+            <a class="button-link" href="#">Как проехать</a>
+            <button class="button-link white-button" type="button">Обратная связь</button>
+        </section>
+        <section class="appointment">
+            <h2 class="appointment-title">Записаться</h2>
+            <p class="appointment-text">Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони.</p>
+            <form class="appointment-form" action="#">
+                <p class="appointment-wrapper">
+                    <label for="appointment-date">Дата</label>
+                    <input class="input-white" id="appointment-date" type="text" placeholder="01.01.2020">
+                </p>
+                <p class="appointment-wrapper">
+                    <label for="appointment-time">Время</label>
+                    <input class="input-white" id="appointment-time" type="text" placeholder="10:10">
+                </p>
+                <p class="appointment-wrapper">
+                    <label for="appointment-phone">Телефон</label>
+                    <input class="input-white" id="appointment-phone" type="text" placeholder="+7 800 000-00-00">
+                </p>
+                <p class="appointment-wrapper">
+                    <label for="appointment-username">Ваше имя</label>
+                    <input class="input-white" id="appointment-username" type="text">
+                </p>
+                <button class="button-link" type="submit">Записаться</button>
+            </form>
+        </section>
+    </main>
+    <footer class="page-footer">
+        <section class="footer-contacts">
+            <h4 class="visually-hidden">Контакты</h4>
+            <img class="footer-logo" src="" alt="Логотип">
+            <address>
+                <p class="footer-city">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
+                <a class="footer-tel" href="tel:78005558628">+7 800 555-86-28</a>
+            </address>
+            <a  class="footer-maplink" href="#">Как нас найти?</a>
+        </section>
+        <section class="footer-newsletter">
+            <h4 class="footer-title">Получайте лучшие предложения</h4>
+           <form class="newsletter-form" action="#">
+            <label for="newsletter-mail">E-mail</label>
+            <input class="input-white" id="newsletter-mail" type="email" placeholder="username@yandex.ru" required>
+            <button class="button-link arrow-button" type="submit">
+                <span class="visually-hidden">Отправить</span>
+            </button>
+           </form>
+        </section>
+        <section class="footer-social">
+            <h4 class="footer-title">Давайте дружить</h4>
+            <ul class="social-list">
+                <li class="social-item">
+                    <a class="button-link" href="#"></a>
+                    <span class="visually-hidden">Твиттер</span>
+                </li>
+                <li class="social-item">
+                    <a class="button-link" href="#"></a>
+                    <span class="visually-hidden">ВК</span>
+                </li>
+                <li class="social-item">
+                    <a class="button-link" href="#"></a>
+                    <span class="visually-hidden">Инстаграм</span>
+                </li>
+            </ul>
+            <p class="about-us">Сделано by <a class="about-link" href="#">Anatoliy Nik.</a></p>
+        </section>
+    </footer>
 </body>
 </html>
