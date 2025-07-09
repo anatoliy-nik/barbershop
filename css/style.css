@@ -1,0 +1,333 @@
+html {
+    height: 100%;
+}
+body {
+    font-family: "PT Sans", sans-serif;
+    font-size: 16px;
+    background-color: #fff;
+    color: #000;
+    line-height: 24px;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    margin: 0;
+    /* border: 5px solid pink; */
+}
+.main-container {
+    flex-grow: 1;
+}
+ul {
+    margin: 0;
+    padding: 0;
+}
+.main-wrapper {
+    max-width: 940px;
+    margin: 0 auto;
+    border: 1px solid red;
+}
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    clip: rect (0 0 0 0);
+    overflow: hidden;
+}
+.button-link {
+    background-color: #000;
+    padding: 14px 20px;
+    color: #fff;
+    border: none;
+    display: inline-block;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "PT Sans", sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 100%;
+    text-decoration: none;
+    /* height: 44px; */
+}
+.white-button {
+    background-color: #fff;
+    color: #000;
+}
+.button-link:hover {
+    cursor: pointer;
+}
+/* header */
+.page-header {
+    background-color: #000;
+}
+.navigation {
+    display: flex;
+    max-width: 940px;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid red;
+
+}
+.navigation-list {
+    max-width: 50%;
+    display: flex;
+}
+.navigation-user {
+    max-width: 50%;
+    
+}
+.navigation-item {
+    list-style: none;
+}
+.navigation-link {
+    font-family: "PT Sans Narrow", sans-serif;
+    font-weight: 700;
+    line-height: 140%;
+    text-transform: uppercase;
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    display: block;
+    padding: 24px 20px;
+}
+/* main */
+.main-index {
+    background-image: url(../img/interier-top.jpg);
+    background-color: #000;
+    color: #fff;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+}
+.main-logo {
+    display: block;
+    margin: 64px auto;
+}
+/* advantages */
+.advantages-list {
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 58px;
+}
+.advantages-item {
+    width: 277px;
+    list-style: none;
+}
+.advantages-title {
+    font-family: "PT Sans Narrow", sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 110%;
+    text-transform: uppercase;
+    color: #fff;
+    margin: 0 0 56px 0;
+}
+.advantages-description {
+    margin: 0;
+}
+/* main-wrapper-white */
+.main-wrapper-white {
+    background-image: url(../img/noisy-texture.png);
+    background-color: #fff;
+    color: #000;
+    display: flex;
+    justify-content: space-between;
+    /* padding: 40px; */
+    margin-bottom: 32px;
+}
+
+/* services */
+.services {
+    text-transform: uppercase;
+    width: 50%;
+    margin: 40px;
+}
+.services-title, .gallery-title, 
+.contacts-title, .appointment-title {
+    font-family: "PT Sans Narrow", sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 110%;
+    color: #242424;
+    margin: 0 0 20px 0;
+}
+.services-list {
+    font-family: "PT Sans Narrow", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 140%;
+    color: #242424
+}
+.services-price {
+    color: #af7842;
+}
+/* gallery */
+.gallery {
+    width: 50%;
+    margin: 40px;
+}
+.gallery-title {
+    text-transform: uppercase;
+}
+/* contacts */
+.contacts {
+    font-weight: 700;
+    width: 50%;
+    margin: 40px;
+}
+.contacts-title {
+    text-transform: uppercase;
+}
+address {
+    font-style: normal;
+}
+.contacts-subtitle {
+    font-family: "PT Sans Narrow", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 140%;
+    text-transform: uppercase;
+    color: #af7842;
+}
+.contacts-tel {
+    font-family: "PT Sans Narrow", sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+    color: #242424;
+}
+/* appointment */
+.appointment {
+    width: 50%;
+    margin: 40px;
+}
+.appointment-title {
+    text-transform: uppercase;
+}
+/* footer */
+.footer-wrapper {
+    max-width: 940px;
+    margin: 0 auto;
+    border: 1px solid red;
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 0;
+}
+.page-footer {
+    background-image: url(../img/noisy-texture.png);
+    background-color: #242424;
+    color: #fff;
+    font-weight: 700;
+}
+.page-footer a {
+    color: #fff;
+}
+.page-footer .about-link {
+    color: #dbb590;
+}
+.footer-contacts {
+    width: 25%;
+}
+.footer-newsletter {
+    width: 50%;
+    text-align: center;
+}
+.footer-social {
+    width: 25%;
+}
+.social-list {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+}
+.social-item {
+    width: 56px;
+    height: 44px;
+    background: #000;
+}
+
+/* catalog */
+.navigation-logo {
+    width: 140px;
+}
+.navigation-logo-img {
+    display: block;
+}
+.main-title {
+    font-family: "PT Sans Narrow", sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 110%;
+    text-transform: uppercase;
+    color: #242424;
+}
+.breadcrumbs {
+    display: flex;
+    list-style-type: none;
+}
+.breadcrumbs-item {
+    margin-right: 32px;
+}
+.main-catalog {
+    background-image: url(../img/noisy-texture.png);
+    background-color: #fff;
+    color: #000;
+}
+.catalog-filter {
+    border: 1px solid green;
+    width: 220px;
+    margin-right: 20px;
+}
+.catalog-products {
+    display: flex;
+}
+.right-box {
+    border: 1px solid green;
+    flex-grow: 1;
+}
+.catalog-filter-title {
+    font-family: "PT Sans Narrow", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 140%;
+    text-transform: uppercase;
+    color: #000;
+}
+.catalog-filter-list {
+    list-style-type: none;
+}
+.select-wrapper {
+    display: flex;
+    padding: 16px;
+    background-color: #fff;
+    margin-bottom: 16px;
+}
+.select-wrapper .button-link {
+    width: 56px;
+    height: 44px;
+}
+.product-wrapper {
+    margin-bottom: 24px;
+}
+.product-list {
+    list-style-type: none;
+}
+.product-item {
+    border: 1px dotted tomato;
+}
+.pagination-wrapper {
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 16px;
+}
+.pagination {
+    display: flex;
+    list-style-type: none;
+}
+.pagination-item {
+    margin-right: 8px;
+}
