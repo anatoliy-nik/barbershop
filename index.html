@@ -7,12 +7,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=PT+Sans+Narrow:wght@400;700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/catalog.css">
     <title>Барбершоп Бородинский</title>
 </head>
 <body>
-
-    <header class="page-header">
+    <!-- <header class="page-header">
         <nav class="navigation">
             <ul class="navigation-list">
                 <li class="navigation-item">
@@ -29,26 +29,83 @@
                 <li class="navigation-item">
                     <a class="navigation-link" href="#">
                         <span class="visually-hidden">Поиск</span>
-                        иконка 1
+                        <svg class="navigation-icon" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M11 6.5C11 8.98528 8.98528 11 6.5 11C4.01472 11 2 8.98528 2 6.5C2 4.01472 4.01472 2 6.5 2C8.98528 2 11 4.01472 11 6.5ZM10.3347 11.7489C9.25973 12.5356 7.9341 13 6.5 13C2.91015 13 0 10.0899 0 6.5C0 2.91015 2.91015 0 6.5 0C10.0899 0 13 2.91015 13 6.5C13 7.9341 12.5356 9.25973 11.7489 10.3347L15.7071 14.2929L14.2929 15.7071L10.3347 11.7489Z" fill="#BDBDBD"/>
+                        </svg>
                     </a>
                 </li>
                 <li class="navigation-item">
                     <a class="navigation-link" href="#">
                         <span class="visually-hidden">Корзина</span>
-                        иконка 2
+                        <svg class="navigation-icon" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M3.09068 6L3.5759 0.90519L3.66211 0H4.5714H11.4285H12.3378L12.424 0.905191L12.9093 6H14.5H15.6328L15.4922 7.12403L14.4922 15.124L14.3828 16H13.5H2.49997H1.61719L1.50769 15.124L0.507692 7.12403L0.367188 6H1.49997H3.09068ZM5.09973 6H10.9002L10.5193 2H5.48068L5.09973 6ZM3.38275 14L2.63275 8H13.3672L12.6172 14H3.38275ZM8.49997 9.5V12.5H10.5V9.5H8.49997ZM5.49997 12.5L5.49997 9.5H7.49997L7.49997 12.5H5.49997Z" fill="#BDBDBD"/>
+                        </svg>                            
                     </a>
                 </li>
                 <li class="navigation-item">
-                    <a class="navigation-link" href="#">Вход</a>
+                    <a class="navigation-link navigation-login" href="#">
+                        <svg class="navigation-icon" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_100591_455)">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M9 2H14V14H9V16H15H16V15V1V0H15H9V2ZM4.29289 3.70711L7.53553 6.94975H0V8.94975H7.53553L4.29289 12.1924L5.70711 13.6066L10.6569 8.65685L11.364 7.94975L10.6569 7.24264L5.70711 2.29289L4.29289 3.70711Z" fill="#BDBDBD"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0_100591_455">
+                            <rect width="16" height="16" fill="white"/>
+                            </clipPath>
+                            </defs>
+                        </svg>
+                        Вход
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header> -->
+    
+    <header class="page-header">
+        <nav class="navigation">
+            <a href="index.html" class="navigation-logo">
+                <img class="navigation-logo-img" src="img/logo-short-light.svg" width="140" height="18" alt="Логотип">
+            </a>
+            <ul class="navigation-list">
+                <li class="navigation-item">
+                    <a class="navigation-link navigation-link-current" href="#">Главная</a>
+                </li>
+                <li class="navigation-item">
+                    <a class="navigation-link" href="#">О нас</a>
+                </li>
+                <li class="navigation-item">
+                    <a class="navigation-link current" href="catalog.html">Каталог</a>
+                </li>
+                <li class="navigation-item">
+                    <a class="navigation-link" href="#">FAQ</a>
+                </li>
+                <li class="navigation-item">
+                    <a class="navigation-link" href="#">Контакты</a>
+                </li>
+            </ul>
+            <ul class="navigation-list navigation-user">
+                <li class="navigation-item">
+                    <a class="navigation-link navigation-search" href="#">
+                        <span class="visually-hidden">Поиск</span>
+                    </a>
+                </li>
+                <li class="navigation-item">
+                    <a class="navigation-link navigation-basket" href="#">
+                        <span class="visually-hidden">Корзина</span>
+                    </a>
+                </li>
+                <li class="navigation-item">
+                    <a class="navigation-link navigation-user-login" href="#"></a>
+                    <span class="visually-hidden">Вход</span>
                 </li>
             </ul>
         </nav>
     </header>
-
     <main class="main-index main-container">
         <div class="main-wrapper">
             <h1 class="visually-hidden">Барбершоп Бородинский</h1>
             <img class="main-logo" src="img/logo-full.svg" width="367" height="152" alt="Логотип">
+            <!-- advantages -->
             <section class="advantages">
                 <h2 class="visually-hidden">Преимущества</h2>
                 <ul class="advantages-list">
@@ -76,6 +133,7 @@
                 </ul>
             </section>
             <div class="main-wrapper-white">
+                <!-- services -->
                 <section class="services">
                     <h2 class="services-title">Популярные услуги</h2>
                     <ul class="services-list">
@@ -96,42 +154,50 @@
                             <b class="services-price">2300  ₽</b>
                         </li>
                     </ul>
-                    <a class="button-link" href="#">Посмотреть все</a>
+                    <a class="button-link services-button-link" href="#">Посмотреть все</a>
                 </section>
+
+                <!-- gallery -->
                 <section class="gallery">
                     <h2 class="gallery-title">Фотогалерея</h2>
-                    <img class="slider-image" src="img/slide-1.jpg" width="390" height="250" alt="Примеры работ">
-                    <button class="slider-button slider-prev" type="button">
-                        <span class="visually-hidden">Предыдущее фото</span>
-                    </button>
-                    <button class="slider-button slider-next" type="button">
-                        <span class="visually-hidden">Следующее фото</span>
-                    </button>
+                    <div class="slider-wrapper">
+                        <img class="slider-image" src="img/slide-1.jpg" width="390" height="250" alt="Примеры работ">
+                        <div class="slider-arrows">
+                            <button class="button-link slider-prev" type="button">
+                                <span class="visually-hidden">Предыдущее фото</span>
+                            </button>
+                            <button class="button-link slider-next" type="button">
+                                <span class="visually-hidden">Следующее фото</span>
+                            </button>
+                        </div>
+                    </div>
                     <ol class="slider-pagination">
                         <li class="slider-pagination-item">
-                            <button class="slider-pagination-button current">
+                            <button class="slider-pagination-button slide-current" type="button">
                                 <span class="visually-hidden">Фото 1</span>
                             </button>
                         </li>
                         <li class="slider-pagination-item">
-                            <button class="slider-pagination-button">
+                            <button class="slider-pagination-button" type="button">
                                 <span class="visually-hidden">Фото 2</span>
                             </button>
                         </li>
                         <li class="slider-pagination-item">
-                            <button class="slider-pagination-button">
+                            <button class="slider-pagination-button" type="button">
                                 <span class="visually-hidden">Фото 3</span>
                             </button>
                         </li>
                         <li class="slider-pagination-item">
-                            <button class="slider-pagination-button">
+                            <button class="slider-pagination-button" type="button">
                                 <span class="visually-hidden">Фото 4</span>
                             </button>
                         </li>
                     </ol>
                 </section>
+
             </div>
             <div class="main-wrapper-white">
+                <!-- contacts -->
                 <section class="contacts">
                     <h2 class="contacts-title">Контакты</h2>
                     <h3 class="contacts-subtitle">Барбершоп «Бородинский»</h3>
@@ -147,6 +213,7 @@
                 <a class="button-link" href="#">Как проехать</a>
                 <button class="button-link white-button" type="button">Обратная связь</button>
                 </section>
+                <!-- appointment -->
                 <section class="appointment">
                     <h2 class="appointment-title">Записаться</h2>
                     <p class="appointment-text">Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони.</p>
@@ -190,7 +257,7 @@
             <form class="newsletter-form" action="#">
                 <label for="newsletter-mail">E-mail</label>
                 <input class="input-white" id="newsletter-mail" type="email" placeholder="username@yandex.ru" required>
-                <button class="button-link arrow-button" type="submit">
+                <button class="button-link newsletter-button" type="submit">
                     <span class="visually-hidden">Отправить</span>
                 </button>
             </form>
@@ -199,15 +266,16 @@
                 <h4 class="footer-title">Давайте дружить</h4>
                 <ul class="social-list">
                     <li class="social-item">
-                        <a class="button-link" href="#"></a>
+                        <a class="button-link tw" href="#"></a>
                         <span class="visually-hidden">Твиттер</span>
                     </li>
                     <li class="social-item">
-                        <a class="button-link" href="#"></a>
+                        <a class="button-link vk" href="#"></a>
                         <span class="visually-hidden">ВК</span>
+                        
                     </li>
                     <li class="social-item">
-                        <a class="button-link" href="#"></a>
+                        <a class="button-link inst" href="#"></a>
                         <span class="visually-hidden">Инстаграм</span>
                     </li>
                 </ul>
