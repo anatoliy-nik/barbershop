@@ -20,10 +20,144 @@
 .breadcrumbs-item {
     margin-right: 32px;
 }
+/* form */
+
+/* range-slider */
+.range-scale {
+    position: relative;
+    height: 4px;
+    background-color: #242424;
+    margin-bottom: 16px;
+    border-radius: 2px;
+}
+.range-bar {
+    position: absolute;
+    height: 4px;
+    background-color: #af7842;
+}
+.toggle-range-button {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid #242424;
+    cursor: pointer;
+    background-color: #fff;
+}
+.toggle-range-button:hover {
+    background-color: #dbb590;
+}
+.toggle-min {
+    top: -8px;
+    /* left: -8px; */
+}
+.toggle-max {
+    top: -8px;
+    /* right: -8px; */
+}
+.range-input::-webkit-outer-spin-button,
+.range-input::-webkit-inner-spin-button {
+    appearance: none;
+    margin: 0;
+    /* убрать стрелки из инпута */
+}
+.range-price {
+    display: flex;
+    justify-content: center;
+}
+.range-label {
+    display: flex;
+    justify-content: center;
+    margin: 0 4px;
+}
+.range-input {
+    width: 40px;
+    background-color: transparent;
+    border: none;
+    font: inherit;
+    text-align: center;
+    appearance: textfield;
+}
+/* catalog-filter-group */
+.catalog-filter-group {
+    margin: 0;
+    padding: 0;
+    border: none;
+    margin-bottom: 40px;
+}
+.control {
+    position: relative;
+    display: block;
+    padding-left: 36px;
+    border: 1px solid green;
+    cursor: pointer;
+}
+.control-mark {
+    position: absolute;
+    top: 2px;
+    left: 0;
+    width: 16px;
+    height: 16px;
+    border: 2px solid #242424;
+}
+.control:hover .control-mark {
+    border-color:  #814b18;
+}
+/* .control-input:disabled + .control-mark {
+    border-color: #242424; 
+} */
+ /* checkbox */
+.control-input[type="checkbox"]:checked + .control-mark::before,
+.control-input[type="checkbox"]:checked + .control-mark::after {
+    content: "";
+    position: absolute;
+    top: 7px;
+    left: 2px;
+    width: 12px;
+    height: 2px;
+    background-color: #242424;
+}
+.control-input[type="checkbox"]:checked + .control-mark::before {
+    transform: rotate(45deg);
+}
+.control-input[type="checkbox"]:checked + .control-mark::after {
+    transform: rotate(-45deg);
+}
+/* radio */
+.control-input[type="radio"]:checked + .control-mark::before,
+.control-input[type="radio"]:checked + .control-mark::after {
+    content: "";
+    position: absolute;
+    top: 7px;
+    left: 2px;
+    width: 12px;
+    height: 2px;
+    background-color: #242424;
+}
+.control-input[type="radio"]:checked + .control-mark::before {
+    transform: rotate(45deg);
+}
+.control-input[type="radio"]:checked + .control-mark::after {
+    transform: rotate(-45deg);
+}
+
+.control-label {
+    font-family: "PT Sans", sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 140%;
+    color: #242424;
+}
+.catalog-filter-item:not(:last-child) {
+    margin-bottom: 16px;
+}
+
+/* main-catalog */
 .main-catalog {
     background-image: url(../img/noisy-texture.png);
     background-color: #fff;
     color: #000;
+    margin-bottom: 32px;
 }
 .catalog-filter {
     border: 1px solid green;
@@ -44,6 +178,7 @@
     line-height: 140%;
     text-transform: uppercase;
     color: #000;
+    margin-bottom: 20px;
 }
 .catalog-filter-list {
     list-style-type: none;
@@ -68,9 +203,7 @@
 .select-wrapper .button-link:hover {
     background-color: #dbb590;
 }
-.select-wrapper select {
-    margin-right: auto;
-}
+
 .select-wrapper .select-current {
     background-color: #000;
 }
@@ -79,6 +212,31 @@
 }
 .select-wrapper .select-current:hover {
     background-color: #814b18;
+}
+.select {
+    /* border: 1px solid green; */
+    width: 260px;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+}
+.select-control {
+    width: 100%;
+    padding: 8px 14px;
+    padding-right: 48px;
+    font-family: "PT Sans", sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+    border: 2px solid #242424;
+    color: #242424;
+    background-image: url(../img/arrow-down.svg);
+    background-repeat: no-repeat;
+    background-position: center right 16px;
+    appearance: none;
+    cursor: pointer;
 }
 
 /* pagination-wrapper */
