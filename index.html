@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=PT+Sans+Narrow:wght@400;700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/catalog.css">
     <title>Барбершоп Бородинский</title>
@@ -36,18 +37,18 @@
             </ul>
             <!-- navigation-user -->
             <ul class="navigation-list navigation-user">
-                <li class="navigation-item">
+                <!-- <li class="navigation-item">
                     <button class="navigation-link navigation-search" type="button">
                         <span class="visually-hidden">Поиск</span>
                     </button>
-                </li>
+                </li> -->
                 
                 <!-- Поповер на корзине -->
                 <li class="navigation-item">
                     <button class="navigation-link navigation-basket" href="#">
                         <span class="visually-hidden">Корзина</span>
                     </button>
-                    <div class="popover popover-open">
+                    <div class="popover">
                         <button class="popover-close white-button" type="button">
                             <span class="product-numbers">2</span>
                             <span class="visually-hidden">Закрыть</span>
@@ -137,18 +138,26 @@
                 <!-- gallery -->
                 <section class="gallery">
                     <h2 class="gallery-title">Фотогалерея</h2>
-                    <div class="slider-wrapper">
-                        <img class="slider-image" src="img/slide-1.jpg" width="390" height="250" alt="Примеры работ">
-                        <div class="slider-arrows">
+                    <div class="slider-wrapper your-class">
+                        <div>
+                            <img class="slider-image" src="img/slide-1.jpg" alt="Примеры работ">
+                        </div>
+                        <div>
+                            <img class="slider-image" src="img/slide-1.jpg" alt="Примеры работ">
+                        </div>
+                        <div>
+                            <img class="slider-image" src="img/slide-1.jpg" alt="Примеры работ">
+                        </div>
+                            <!-- <div class="slider-arrows">
                             <button class="button-link slider-prev" type="button">
                                 <span class="visually-hidden">Предыдущее фото</span>
                             </button>
                             <button class="button-link slider-next" type="button">
                                 <span class="visually-hidden">Следующее фото</span>
                             </button>
-                        </div>
+                        </div> -->
                     </div>
-                    <ol class="slider-pagination">
+                    <!-- <ol class="slider-pagination">
                         <li class="slider-pagination-item">
                             <button class="slider-pagination-button slide-current" type="button">
                                 <span class="visually-hidden">Фото 1</span>
@@ -169,7 +178,7 @@
                                 <span class="visually-hidden">Фото 4</span>
                             </button>
                         </li>
-                    </ol>
+                    </ol> -->
                 </section>
             </div>
             <!-- main catalog -->
@@ -556,5 +565,9 @@
             </div>
         </div>
     </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>

@@ -173,7 +173,7 @@ button.button-link:hover {
     background: #fff;
     min-height: 200px;
     position: absolute;
-    top: 0;
+    top: 100%;
     right: 0;
     z-index: 1;
     box-sizing: border-box;
@@ -426,6 +426,10 @@ button.button-link:hover {
 .slider-wrapper {
     position: relative;
     margin-bottom: 16px;
+    /* width: 100%; */
+}
+.slider-wrapper div {
+    /* width: 100%; */
 }
 .slider-arrows {
     position: absolute;
@@ -434,6 +438,35 @@ button.button-link:hover {
     transform: translateY(-50%);
     display: flex;
     justify-content: space-between;
+}
+.slick-arrow {
+    
+}
+.slick-dots {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.slick-dots button {
+    border: none;
+    width: 8px;
+    height: 8px;
+    background-color: #bdbdbd;
+    border-radius: 50%;
+    cursor: pointer;
+    margin: 0 4px;
+    display: block;
+    padding: 0;
+    font-size: 0;
+}
+.slick-active button{
+    background-color: #242424;
+}
+.slick-slide img {
+    width: 100%;
 }
 
 /* contacts */
@@ -647,12 +680,14 @@ address {
     height: 100%;
     background-color: rgb(0, 0, 0, 0.8);
     display: flex;
+    z-index: 1;
 }
 .modal-window {
     position: relative;
     padding: 40px 40px;
     margin: auto;
     background-color: #fff;
+    z-index: 2;
 }
 .modal-auth {
     width: 360px;
@@ -709,4 +744,17 @@ address {
 }
 .modal-container-close {
     display: none;
+}
+
+/* media */
+@media (max-width: 940px) {
+    /* .navigation {
+        flex-direction: column;
+    }
+    .navigation-list {
+        order: 3;
+    }
+    .navigation-user {
+        order: 2;
+    } */
 }
